@@ -54,3 +54,6 @@ The codes partly built on examples from the pyGIMLi documentation (https://www.p
 Therefore, please, additionally cite following resources:
 - Rücker, C., Günther, T., Wagner, F. M., 2017. pyGIMLi: An open-source library for modelling and inversion in geophysics. Computers & Geosciences 109, pp. 106-123.
 - Herring, T., Lewkowicz, A. G., Chiasson, A., Wang, Y., Way, R. G., Young, J. M., Froese, D., Smith, S. L., Andersen, B., Bellehumeur-Génier, O., Bevington, A. R., Bonnaventure, P. P., Duguay, M. A., Etzelmüller, B., Gooseff, M. N., Godsey, S. E., Miceli, C. M., 2024. The Canadian Permafrost Electrical Resistivity Survey (CPERS) database: 15 years of permafrost resistivity data. Arctic Science 10(4), pp. 850-856.
+
+Sensitivity (Coverage) acc. to:
+- Herring, T., Lewkowicz, A. G., 2022. A systematic evaluation of electrical resistivity tomography for permafrost interface detection using forward modeling. Permafrost and Periglacial Processes 33(2), pp. 134-146.
