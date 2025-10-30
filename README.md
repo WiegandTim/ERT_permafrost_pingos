@@ -5,8 +5,8 @@ A python code for multidimensional processing and visualization of ERT data incl
 Set up pyGIMLi according to the pyGIMLi documentation (https://www.pygimli.org/installation.html, access: 30 Okt 2025). All Python scripts were tested and run in Jupter Lab.
 
 ## Running pyGIMLi_proc_2D
-- Change `infolder` to the input and workspace directory that includes the dat-files to be processed. All dat-files will be targeted, therefore, make sure that the folder only contains dat-files with proper BERT / pyGIMLi structure.
-- Based on their infile_names, results will be stored in _results folders, error statistic including chi2 and NRMSE (%) in _errors.txt files, and information on the inversion process in _info.log files. A examplary visualization plot is given as png. However, it is highly recommended to run `pyGIMLi_visu_2D` for proper visualization including sensitivity.
+- Change `infolder` to the input and workspace directory that includes the dat-files to be processed. All dat-files will be targeted, therefore, make sure that the folder only contains dat-files that have a proper BERT / pyGIMLi structure and are already filtered based on resistivity or stack deviation. The script does not include data preprocessing and filtering.
+- Based on the infile names, results will be stored in _results folders, error statistics including chi2 and NRMSE (%) in _errors.txt files, and information on the inversion process in _info.log files. An examplary visualization plot is given as png. However, it is highly recommended to run `pyGIMLi_visu_2D` for more advanced visualization including sensitivity.
 
 ## Running pyGIMLi_visu_2D
 
