@@ -3,7 +3,7 @@
 # ---------------
 
 # Processing (Inversion) of 2D BERT/pyGIMLi ERT dat-files with pyGIMLi
-# Important remark: This script is partly based on code examples from the pyGIMLi documentation (https://www.pygimli.org, access: 30 Oct 2025), T. Herring, 2024 (https://github.com/teddiherring/CPERS, access: 30 Oct 2025) and AI chatbots.
+# Important remark: This script is partly based on code examples from the pyGIMLi documentation (https://www.pygimli.org, https://github.com/gimli-org/pyGIMLi, access: 30 Oct 2025), T. Herring, 2024 (https://github.com/teddiherring/CPERS, access: 30 Oct 2025) and AI chatbots.
 
 infolder = '/Users/YourName/Projects/data/HuskyLakes' # Change folder with BERT/pyGIMli dat-files here
 
@@ -122,4 +122,5 @@ import multiprocess # Important: when working in Jupyter, multiprocess instead o
 from multiprocess import Pool
 max_proc = os.cpu_count() - 1
 with Pool(max_proc) as pool:
+
     pool.map(pyGIMLi_proc_2D, os.listdir(infolder))
