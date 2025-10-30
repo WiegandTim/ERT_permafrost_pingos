@@ -9,7 +9,7 @@ Set up pyGIMLi according to the pyGIMLi documentation (https://www.pygimli.org/i
 - Based on the infile names, results will be stored in _results folders, error statistics including chi2 and NRMSE (%) in _errors.txt files, and information on the inversion process in _info.log files. An examplary visualization plot is given as png. However, it is highly recommended to run `pyGIMLi_visu_2D` for more advanced visualization including sensitivity.
 
 ## Running pyGIMLi_visu_2D
-Specify the parameters below. You can do so in the list `inparams` to enable multiprocessing. For some parameters, different values can be provided for plotting different versions of a profile together like, e.g., WSl, DipDip, combined WSl-DipDip.
+Specify the parameters below. You can do so in the list `inparams` to enable multiprocessing. For some parameters, different values can be provided as the idea of the script is to plot different versions of a profile together like, e.g., WSl, DipDip, combined WSl-DipDip.
 
 ### Parameters
 - `infolder`: Folder with input files and workspace; necessary parameter
