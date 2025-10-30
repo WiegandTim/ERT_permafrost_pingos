@@ -1,5 +1,5 @@
 # ERT_permafrost_pingos
-Python codes for multidimensional processing and visualization of ERT data including options for model sensitivity plots and the creation of standardized zones of interest of mound landforms such as pingos in permafrost environments.
+Python codes for multidimensional processing and visualization of ERT data including options for model sensitivity plots and the creation of standardized zones of interest below mound landforms such as pingos in permafrost environments.
 
 ## Installation
 Set up pyGIMLi according to the pyGIMLi documentation (https://www.pygimli.org/installation.html, access: 30 Oct 2025). All Python scripts were tested and run in Jupter Lab.
