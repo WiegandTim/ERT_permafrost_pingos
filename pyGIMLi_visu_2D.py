@@ -3,7 +3,7 @@
 # ---------------
 
 # Visualization of 2D pyGIMLi ERT profiles including options for model sensitivity plots and standardized zones of interest below mound landforms such as pingos.
-# Important remark: This script is partly based on code examples from the pyGIMLi documentation (https://www.pygimli.org, access: 30 Oct 2025), T. Herring, 2024 (https://github.com/teddiherring/CPERS, access: 30 Oct 2025) and AI chatbots.
+# Important remark: This script is partly based on code examples from the pyGIMLi documentation (https://www.pygimli.org, https://github.com/gimli-org/pyGIMLi, access: 30 Oct 2025), T. Herring, 2024 (https://github.com/teddiherring/CPERS, access: 30 Oct 2025) and AI chatbots.
 
 insite = 'HuskyLakes'
 
@@ -708,4 +708,5 @@ from multiprocess import Pool
 max_proc = os.cpu_count() - 1
 
 with Pool(max_proc) as pool:
+
     pool.starmap(pyGIMLi_visu_2D, inparams)
