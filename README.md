@@ -2,7 +2,7 @@
 Python codes for multidimensional processing and visualization of ERT data including options for model sensitivity plots and the creation of standardized zones of interest of mound landforms such as pingos in permafrost environments.
 
 ## Installation
-Set up pyGIMLi according to the pyGIMLi documentation (https://www.pygimli.org/installation.html, access: 30 Okt 2025). All Python scripts were tested and run in Jupter Lab.
+Set up pyGIMLi according to the pyGIMLi documentation (https://www.pygimli.org/installation.html, access: 30 Oct 2025). All Python scripts were tested and run in Jupter Lab.
 
 ## Running pyGIMLi_proc_2D
 - Change `infolder` to the input and workspace directory that includes the dat-files to be processed. All dat-files will be targeted, therefore, make sure that the folder only contains dat-files that have a proper BERT / pyGIMLi structure and are already filtered based on resistivity or stack deviation. The script does not include data preprocessing and filtering.
@@ -12,29 +12,29 @@ Set up pyGIMLi according to the pyGIMLi documentation (https://www.pygimli.org/i
 Specify the parameters below. You can do so in the list `inparams` to enable multiprocessing.
 
 ### Parameters
-- `infolder`: Folder with input files and workspace, necessary
-- `inlist`: List of input files, necessary
-- `ymin`: Minimum y-axis value in plot, let more space when plotting scatter plot and violin plots, necessary
-- `ymax`: Maximum y-axis value in plot, necessary
-- `y_steps`: Distance between y axis ticks in m, default: 10
+- `infolder`: Folder with input files and workspace, necessary parameter
+- `inlist`: List of input files, necessary parameter
+- `ymin`: Minimum y-axis value of output plot, let more space when plotting additional scatter plot and violin plots, necessary parameter
+- `ymax`: Maximum y-axis value of output plot, necessary parameter
+- `y_steps`: Distance between y axis ticks/labels in m, default: 10
 - `fig_width`: Width of figure in cm, there is no full control on `fig_width` and `fig_height` due to equal aspect ratio of x and y axis, default: 16
 - `fig_height`: Height of figure in cm, there is no full control on `fig_width` and `fig_height` due to equal aspect ratio of x and y axis, default: 16
 - `apply_scatter`: Whether to apply a scatter plot of resistivity and sensitivity, default: True
-- `apply_ZoI`: Whether to apply Zone of Interest (ZOI) below the mound feature(s), default: True
-- `apply_violin`: Whether to apply violin plots of resistivity and sensitivity in ZOI and TES (full trapezoidal/triangular ERT section, that is covered by data points), default: True
-- `pingo_xmin`: List of min x-values for pings, default: []
-- `pingo_xmax`: List of max x-values for pings, default: []
-- `spacing`: Electrode spacing, relevant for ZOI creation, default: 2
+- `apply_ZoI`: Whether to apply a Zone of Interest (ZOI) below the mound feature(s), default: True
+- `apply_violin`: Whether to apply violin plots of resistivity and sensitivity of ZOI and TES (full trapezoidal/triangular ERT section that is covered by data points), default: True
+- `pingo_xmin`: Distance along the profile where the pingo/permafrost mound starts ("foot" of the pingo), relevant for ZOI creation, give different start values when more than one pingo/mound in the transect should be considered, default: []
+- `pingo_xmax`: Distance along the profile where the pingo/permafrost mound ends ("foot" of the pingo), relevant for ZOI creation, give different end values when more than one pingo/mound in the transect should be considered, default: []
+- `spacing`: Electrode spacing in m, relevant for ZOI creation, as ZOI is located half the spacing below the surface of the pingo/mound, default: 2
 - `zoi_scaling`: Scaling factor for the lower, mirrored boundary of ZOI, default: 1 (no scaling)
-- `alayer_factor`: Additional factor for moving the whole ZOI, default: 0
-- `clabel_levels`: Factor to individually spezify sensitivity contour label levels, default: None
-- `roll_along`: Whether to exclude a triangle in between of two ERT measurements that form a roll-along measurement, specify x and y coordinates below, default: False
+- `alayer_factor`: Additional factor for moving the whole ZOI, e.g., 5 moves the ZOI 5 * spacing downwards (e.g., to exclude the active layer), default: 0
+- `clabel_levels`: Factor to individually specify sensitivity contour label levels, default: None
+- `roll_along`: Whether to exclude a triangle in between of two ERT measurements that form a roll-along measurement, if applying, specify x and y coordinates below, default: False
 - `empty_layout`: Whether to generate the plot without sensitivity contour lines, electrode positions and only showing TES, default: False
 - `ncol`: Number of columns in layout, default: 1
 - `cmin`: Minimum resistivity value for colourbar (logarithmic), default: 100
 - `cmax`: Maximum resistivity value for colourbar (logarithmic), default: 100000
-- `levels`: Number logarithmic value steps on colourbar, default: 4 (with `cmin` and `cmax` here: 100, 1000, 10000, 100000)
-- `cross_ele`: Possibility to indicate a crossing ERT profile as 'x', default: None
+- `levels`: Number logarithmic value steps on colourbar, default: 4 (here with `cmin` and `cmax`: 100, 1000, 10000, 100000)
+- `cross_ele`: Possibility to indicate a crossing ERT profile in the plot, default: None
 - `res_contours`: Possibility to draw specific resistivity contour lines (e.g., assumed frozen-unfrozen boundary), default: None
 - `mirror_profile`: Whether to mirror the profile horizontally, default: False
 - `outside_DOI_alpha`: Transparency of white bleaching of the area around TES, default: 0.5
@@ -44,8 +44,6 @@ Specify the parameters below. You can do so in the list `inparams` to enable mul
 - `roll_along_triangle_y2`: Y-coordinates for triangle 2, default: []
 - `roll_along_triangle_x3`: X-coordinates for triangle 3, default: []
 - `roll_along_triangle_y3`: Y-coordinates for triangle 3, default: []
-
-
 
 ## Running pyGIMLi_proc_3D
 
