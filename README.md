@@ -52,7 +52,7 @@ Specify the parameters below. You can do so in the list `inparams` to enable mul
 - Based on the infile names, results will be stored in _results folders, error statistics including chi2 and NRMSE (%) in _errors.txt files, and information on the inversion process in _info.log files. Visualization is possible with the resistivity.vtk file stored in the _results folder.
 
 ## Citation
-The codes partly built on examples from the pyGIMLi documentation (https://www.pygimli.org, https://github.com/gimli-org/pyGIMLi, access: 30 Oct 2025), T. Herring, 2024 (https://github.com/teddiherring/CPERS, access: 30 Oct 2025) and AI chatbots.
+The scripts are partly built on code examples from the pyGIMLi documentation (https://www.pygimli.org, https://github.com/gimli-org/pyGIMLi, access: 30 Oct 2025), T. Herring, 2024 (https://github.com/teddiherring/CPERS, access: 30 Oct 2025) and AI chatbots.
 Therefore, please, additionally cite following resources:
 - Rücker, C., Günther, T., Wagner, F. M., 2017. pyGIMLi: An open-source library for modelling and inversion in geophysics. Computers & Geosciences 109, pp. 106-123.
 - Herring, T., Lewkowicz, A. G., Chiasson, A., Wang, Y., Way, R. G., Young, J. M., Froese, D., Smith, S. L., Andersen, B., Bellehumeur-Génier, O., Bevington, A. R., Bonnaventure, P. P., Duguay, M. A., Etzelmüller, B., Gooseff, M. N., Godsey, S. E., Miceli, C. M., 2024. The Canadian Permafrost Electrical Resistivity Survey (CPERS) database: 15 years of permafrost resistivity data. Arctic Science 10(4), pp. 850-856.
