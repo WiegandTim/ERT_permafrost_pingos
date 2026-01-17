@@ -6,7 +6,7 @@ Set up pyGIMLi according to the pyGIMLi documentation (https://www.pygimli.org/i
 
 ## Running pyGIMLi_proc_2D
 - Change `infolder` to the input and workspace directory that includes the dat-files to be processed. All dat-files will be targeted, therefore, make sure that the folder only contains dat-files that have a proper BERT/pyGIMLi structure and are already filtered based on resistivity or stack deviation. The script does not include data preprocessing and filtering.
-- Based on the infile names, results will be stored in _results folders, error statistics including chi2 and NRMSE (%) in _errors.txt files, and information on the inversion process in _info.log files. An examplary visualization plot is given as png. However, it is highly recommended to run `pyGIMLi_visu_2D` for more advanced visualization including sensitivity.
+- Based on the infile names, results will be stored in _results folders, error statistics including chi2 and NRMSE (%) in _errors.txt files, and information on the inversion process in _info.log files. An examplary visualization plot will be saved as png. However, it is highly recommended to run `pyGIMLi_visu_2D` for more advanced visualization including sensitivity.
 
 ## Running pyGIMLi_visu_2D
 Specify the parameters below. You can do so in the list `inparams` to enable multiprocessing. For some parameters, different values can be provided as the idea of the script is to plot different versions of a profile together like, e.g., WSl, DipDip, combined WSl-DipDip.
@@ -48,6 +48,8 @@ Specify the parameters below. You can do so in the list `inparams` to enable mul
 *) Provide different values when plotting different versions of a profile together (e.g., WSl, DipDip, combined WSl-DipDip)
 
 ## Running pyGIMLi_proc_3D
+- Change `infolder` to the input and workspace directory that includes the dat-files to be processed. All dat-files will be targeted, therefore, make sure that the folder only contains dat-files that have a proper BERT/pyGIMLi structure and are already filtered based on resistivity or stack deviation. The script does not include data preprocessing and filtering.
+- Based on the infile names, results will be stored in _results folders, error statistics including chi2 and NRMSE (%) in _errors.txt files, and information on the inversion process in _info.log files. Visualization is, e.g., possible with the resistivity.vtk file stored in the _results folder.
 
 ## Citation
 The codes partly built on examples from the pyGIMLi documentation (https://www.pygimli.org, https://github.com/gimli-org/pyGIMLi, access: 30 Oct 2025), T. Herring, 2024 (https://github.com/teddiherring/CPERS, access: 30 Oct 2025) and AI chatbots.
