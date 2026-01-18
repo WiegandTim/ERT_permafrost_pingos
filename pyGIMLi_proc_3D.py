@@ -3,7 +3,7 @@
 # ---------------
 
 # Processing (Inversion) of 3D BERT/pyGIMLi ERT dat-files with pyGIMLi
-# Important remark: This script is partly based on code examples from the pyGIMLi documentation (https://www.pygimli.org, access: 30 Oct 2025) and AI chatbots.
+# Important remark: This script is partly based on code examples from the pyGIMLi documentation (https://www.pygimli.org, access: 30 Oct 2025), T. Herring, 2024 (https://github.com/teddiherring/CPERS, access: 30 Oct 2025) and AI chatbots.
 
 insite = 'HuskyLakes'
 
@@ -12,7 +12,7 @@ if insite == 'HuskyLakes':
     infolder = '/Users/YourName/Projects/data/HuskyLakes' # Change folder with BERT/pyGIMli dat-files here
     infiles = ['WSl5_3D.dat', 'Dip5_3D.dat', 'WSl5_Dip5_3D.dat']
     inparaDepth = 60
-    inparaMaxCellFactor = 15 # factor will be multiplied with spacing for paraMaxCellSize; iteratively choosen
+    inparaMaxCellFactor = 150 # factor will be multiplied with spacing for paraMaxCellSize; iteratively choosen
     inparaDX = 0
 
 def pyGIMLI_3D_proc(
@@ -97,4 +97,5 @@ def pyGIMLI_3D_proc(
 
 # Processing of input dat-files
 for i in infiles:
+
     pyGIMLI_3D_proc(infolder, i, inparaMaxCellFactor, inparaDepth, inparaDX)
